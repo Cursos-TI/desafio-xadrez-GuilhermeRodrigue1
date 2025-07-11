@@ -336,53 +336,91 @@ void cavalo() {
             respostaCavalo = 0;
         } else {
 
+            int index = 1; // A variavel vai servir para os modelos de Loop 'While' e 'Do While'
             switch (respostaCavalo) {
                 case 1:
-                    int i = 0;
-                    while (i == 0) {
-                        for ( int y = 0 ; y < 2 ; y++ ) {
-                            printf("%i: Movendo para cima\n", y);
+                    // Loop externo 'For' Loop interno 'While'
+                    for (int i = 1; i == 1; i++) {
+                        while (index < 3) {
+                            printf("%i: Movendo para cima\n", index);
+                            index++;
                         };
                         printf("%i: Movendo para esquerda\n", i);
-                        i++;
                     };
                     break;
                 case 2:
-
-
-
+                    // Loop externo 'While' Loop interno 'For'
+                    while (index == 1) {
+                        for (int i = 1; i < 3; i++) {
+                            printf("%i: Movendo para cima\n", i);
+                        };
+                        printf("%i: Movendo para direita\n", index);
+                        index++;
+                    };
                     break;
                 case 3:
-
-
-
+                    // Loop externo 'Do While' Loop interno 'For'
+                    do {
+                        for (int i = 1; i < 3; i++) {
+                            printf("%i: Movendo para baixo\n", i);
+                        };
+                        printf("%i: Movendo para esquerda\n", index);
+                        index++;
+                    } while (index == 1);
                     break;
                 case 4:
-
-
+                    // Loop externo 'For' Loop interno 'While'
+                    for (int i = 1; i == 1; i++) {
+                        while (index < 3) {
+                            printf("%i: Movendo para baixo\n", index);
+                            index++;
+                        };
+                        printf("%i: Movendo para direita\n", i);
+                    };
                     break;
                 case 5:
-
-
+                    // Loop externo 'While' Loop interno 'For'
+                    while (index == 1) {
+                        for (int i = 1; i < 3; i++) {
+                            printf("%i: Movendo para esquerda\n", i);
+                        };
+                        printf("%i: Movendo para cima\n", index);
+                        index++;
+                    };
                     break;
                 case 6:
-
-
-
-                    printf("============================\n");
-
+                    // Loop externo 'Do While' Loop interno 'For'
+                    do {
+                        for (int i = 1; i < 3; i++) {
+                            printf("%i: Movendo para esquerda\n", i);
+                        };
+                        printf("%i: Movendo para baixo\n", index);
+                        index++;
+                    } while (index == 1);
                     break;
                 case 7:
-
-
+                    // Loop externo 'For' Loop interno 'While'
+                    for (int i = 1; i == 1; i++) {
+                        while (index < 3) {
+                            printf("%i: Movendo para direita\n", index);
+                            index++;
+                        };
+                        printf("%i: Movendo para cima\n", i);
+                    };
                     break;
                 case 8:
-
-                    printf("============================\n");
-
+                    // Loop externo 'While' Loop interno 'For'
+                    while (index == 1) {
+                        for (int i = 1; i < 3; i++) {
+                            printf("%i: Movendo para direita\n", i);
+                        };
+                        printf("%i: Movendo para baixo\n", index);
+                        index++;
+                    };
                     break;
             };
 
+            index = 1; // Reajustando valor inicial de index novamente para os loops de 'While' e 'Do While'.
             printf("Gostaria de fazer outro movimento com o 'Cavalo':\n");
             printf("1 = Sim\n");
             printf("0 = Nao\n");
