@@ -23,7 +23,6 @@ void torre() {
             printf("============================\n");
             respostaTorre = 0;
         } else {
-
             switch (respostaTorre) {
                 case 1:
 
@@ -99,59 +98,39 @@ void bispo() {
             printf("============================\n");
             respostaBispo = 0;
         } else {
-
+            int i = 1;
             switch (respostaBispo) {
                 case 1:
-
-                    for(int i = 1; i < 6; i++) {
+                    while (i < 6) {
                         printf("%i: Movendo para cima\n", i);
-                    }; // Move 5 casas para cima
-
-                    for ( int i2 = 1; i2 < 6; i2++) {
-                        printf("%i: Movendo para a esquerda\n", i2);
-                    }; // Após mover tudo para cima, move 5 casas a esquerda
-
+                        printf("%i: Movendo para a esquerda\n", i);
+                        i++;
+                    };
                     printf("============================\n");
-
                     break;
                 case 2:
-
-                    for(int i = 1; i < 6; i++) {
+                    while (i < 6) {
                         printf("%i: Movendo para cima\n", i);
-                    }; // Move 5 casas para cima
-
-                    for ( int i2 = 1; i2 < 6; i2++) {
-                        printf("%i: Movendo para a direita\n", i2);
-                    }; // Após mover tudo para cima, move 5 casas a direita
-
+                        printf("%i: Movendo para a direita\n", i);
+                        i++;
+                    };
                     printf("============================\n");
-
                     break;
                 case 3:
-
-                    for(int i = 1; i < 6; i++) {
+                    while (i < 6) {
                         printf("%i: Movendo para baixo\n", i);
-                    }; // Move 5 casas para baixo
-
-                    for ( int i2 = 1; i2 < 6; i2++) {
-                        printf("%i: Movendo para a esquerda\n", i2);
-                    }; // Após mover tudo para baixo, move 5 casas a esquerda
-
+                        printf("%i: Movendo para a esquerda\n", i);
+                        i++;
+                    };
                     printf("============================\n");
-
                     break;
                 case 4:
-
-                    for(int i = 1; i < 6; i++) {
+                    while (i < 6) {
                         printf("%i: Movendo para baixo\n", i);
-                    }; // Move 5 casas para baixo
-
-                    for ( int i2 = 1; i2 < 6; i2++) {
-                        printf("%i: Movendo para a direita\n", i2);
-                    }; // Após mover tudo para baixo, move 5 casas a direita
-
+                        printf("%i: Movendo para a direita\n", i);
+                        i++;
+                    };
                     printf("============================\n");
-
                     break;
             };
 
@@ -181,7 +160,7 @@ void rainha() {
 
     do {
 
-        printf("Escolha o movimento que voce quer fazer no 'Bispo':\n");
+        printf("Escolha o movimento que voce quer fazer na 'Rainha':\n");
         printf("1. 8 Casas para 'Horizontal Esquerda'\n");
         printf("2. 8 Casas para 'Horizontal Direita'\n");
         printf("3. 8 Casas para 'Vertical Cima'\n");
@@ -199,91 +178,69 @@ void rainha() {
             printf("============================\n");
             respostaRainha = 0;
         } else {
-
+            int i = 1;
             switch (respostaRainha) {
                 case 1:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo horizontalmente para a esquerda\n", i);
-                    };
+                        i++;
+                    } while (i < 8);
                     printf("============================\n");
-
                     break;
                 case 2:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo horizontalmente para a direita\n", i);
-                    };
+                        i++;
+                    } while (i < 8);
                     printf("============================\n");
-
                     break;
                 case 3:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo verticalmente para cima\n", i);
-                    };
+                        i++;
+                    } while (i < 8);
                     printf("============================\n");
 
                     break;
                 case 4:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo verticalmente para baixo\n", i);
-                    };
+                        i++;
+                    } while (i < 8);
                     printf("============================\n");
 
                     break;
                 case 5:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo para cima\n", i);
-                    }; // Move 5 casas para cima
-
-                    for ( int i2 = 1; i2 < 9; i2++) {
-                        printf("%i: Movendo para a esquerda\n", i2);
-                    }; // Após mover tudo para cima, move 5 casas a esquerda
-
+                        printf("%i: Movendo para a esquerda\n", i);
+                        i++;
+                    } while (i <= 8);
                     printf("============================\n");
-
                     break;
                 case 6:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo para cima\n", i);
-                    }; // Move 5 casas para cima
-
-                    for ( int i2 = 1; i2 < 9; i2++) {
-                        printf("%i: Movendo para a direita\n", i2);
-                    }; // Após mover tudo para cima, move 5 casas a direita
-
+                        printf("%i: Movendo para a direita\n", i);
+                        i++;
+                    } while (i <= 8);
                     printf("============================\n");
-
                     break;
                 case 7:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo para baixo\n", i);
-                    }; // Move 5 casas para baixo
-
-                    for ( int i2 = 1; i2 < 9; i2++) {
-                        printf("%i: Movendo para a esquerda\n", i2);
-                    }; // Após mover tudo para baixo, move 5 casas a esquerda
-
+                        printf("%i: Movendo para a esquerda\n", i);
+                        i++;
+                    } while (i <= 8);
                     printf("============================\n");
-
                     break;
                 case 8:
-
-                    for(int i = 1; i < 9; i++) {
+                    do {
                         printf("%i: Movendo para baixo\n", i);
-                    }; // Move 5 casas para baixo
-
-                    for ( int i2 = 1; i2 < 9; i2++) {
-                        printf("%i: Movendo para a direita\n", i2);
-                    }; // Após mover tudo para baixo, move 5 casas a direita
-
+                        printf("%i: Movendo para a direita\n", i);
+                        i++;
+                    } while (i <= 8);
                     printf("============================\n");
-
                     break;
             };
 

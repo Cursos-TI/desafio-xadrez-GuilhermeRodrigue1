@@ -1,9 +1,6 @@
 //
 // Created by Guilherme on 10/07/2025.
 //
-//
-// Created by Guilherme on 10/07/2025.
-//
 #include <stdio.h>
 
 void torre() {
